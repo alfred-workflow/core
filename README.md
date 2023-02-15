@@ -1,4 +1,4 @@
-# @liangshen/alfred
+# @alfred-workflows/core
 
 Creat, Develop and Publish Alfred workflows
 
@@ -15,7 +15,7 @@ npm init -y
 
 ### Install 
 ```
-npm install @liangshen/alfred --save
+npm install @alfred-workflows/core --save
 ```
 1.初始化: 会读取package.json 中的name、author、description、keywords等字段来生成info.plist文件初始化alfred的工作流(如果存在info.plist文件则不初始化)
 2.会为项目创建软链到alfred workflow目录下（主要用于发布前的开发调试阶段）
@@ -28,7 +28,7 @@ touch index.js
  
 index.js
 ```typescript
-import alfred from '@liangshen/alfred'
+import alfred from '@alfred-workflows/core'
 
 const items = [{arg: 'test', title: '测试', subtitle: '11111'}]
 alfred.output({items});
@@ -56,7 +56,7 @@ npm install -g xxxxxx
 会自动清除创建的软链
 
 ```
-npm uninstall @liangshen/alfred
+npm uninstall @alfred-workflows/core
 ```
 
 ## Related
