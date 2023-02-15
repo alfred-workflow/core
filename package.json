@@ -1,6 +1,6 @@
 {
   "name": "@alfred-workflows/core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creat, Develop and Publish Alfred workflows",
   "types": "./lib/index.d.ts",
   "main": "./lib/index.cjs.js",
