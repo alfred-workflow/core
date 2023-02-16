@@ -8,7 +8,7 @@ const os = require("os");
 let projectPath = path.resolve(process.cwd(), '../../../');
 let infoPath = path.resolve(projectPath, 'info.plist');
 if (!fs.existsSync(infoPath)) {
-    let info = fs.readFileSync(path.resolve(process.cwd(), '', 'template/info.plist'), 'UTF-8').toString();
+    let info = fs.readFileSync(path.resolve(process.cwd(), 'template/info.plist'), 'UTF-8').toString();
     let packageJsonPath = path.resolve(projectPath, 'package.json');
     if (!fs.existsSync(packageJsonPath)) {
         return;
