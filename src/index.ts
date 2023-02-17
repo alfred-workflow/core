@@ -44,8 +44,6 @@ type AlfredEnv = {
     alfred_debug: '1' | '0';
     [K: string]: string;
 }
-const a: Record<any, any>
-
 
 
 const alfred = new Alfred()
