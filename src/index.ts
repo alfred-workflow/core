@@ -25,7 +25,8 @@ class Alfred {
     }
 
 }
-interface AlfredEnv {
+
+type AlfredEnv = {
     alfred_preferences: string;
     alfred_preferences_localhash: string;
     alfred_theme: string;
@@ -41,7 +42,9 @@ interface AlfredEnv {
     alfred_workflow_uid: string;
     alfred_workflow_version: string;
     alfred_debug: '1' | '0';
+    [K: string]: string;
 }
+const a: Record<any, any>
 
 
 
